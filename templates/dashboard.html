@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <link rel="stylesheet" href="../static/dashboard_stylesheet.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="dashboard-title">Jobs 22 CSS8 Dashboard</div>
+    </header>
+
+    <div class='container'>
+
+        <!-- Each section is now stacked vertically -->
+        <section>
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h2>Age Group Distribution</h2>
+                    <canvas id="ageGroupChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h2>Gender Distribution</h2>
+                    <canvas id="genderChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h2>Average Score Trends Over Waves</h2>
+                    <canvas id="a1ScoreChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer">© 2024 CCL E-Commerce Dashboard Kevin Colborne DT402</div>
+    </footer>
+
+    <!-- Load the JavaScript file at the bottom -->
+    <script src="../static/dashboard-script.js"></script>
+
+</body>
+
+</html>
